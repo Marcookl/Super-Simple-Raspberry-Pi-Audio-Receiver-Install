@@ -2,17 +2,13 @@
 
 # Changes in Progress, but still working on Support!
 
-Hey Guys and Gals, thanks for the interest in the project. Unfortunately, due to time constraints I am unable to address current issues and debugging, maintenance on the shell scripts are hard and inefficient. As such I will be porting over these scripts to ansible playbooks. This will allow for easier choosing of what you want installed, less brittle code base, and better maintenance so that less people experience the errors.
-
-Once I have feature parity I will be addressing documentation on installing with ansible. The goal here is to allow people to setup multiple devices at once by only issuing one command, additionally to allow multiple OS support with less debugging and maintenance, as well as allowing other developers more easily add functionality to this repo with simple yaml files as opposed to obfuscated shell scripts.
-
-Any open issues I will keep open to allow other community members to help solve issues, but currently I don't have the time to do so. I apologize for the lack of support, but once feature parity with ansible is achieved I believe everyone will be happier and better off.
-Thanks for understanding.
-
-![bitmoji](https://render.bitstrips.com/v2/cpanel/27c34645-4e03-42a5-bb21-c48c76fcacfe-15cd827c-4baa-4b09-a22d-0d657c319951-v1.png?transparent=1&palette=1&width=246)
+Hey Guys, 
+I am forking this source to fix small issues to work with volumio.
 
 # Super Simple Raspberry Pi Audio Receiver Install.
 **\*Stretch Users** Scroll to the bottom for Install Instructions (This is in the testing phase for the moment, please give feedback [here](https://github.com/BaReinhard/Super-Simple-Raspberry-Pi-Audio-Receiver-Install/issues/102)
+
+**\*Volumio Users** Scroll to the middle for Install Instructions
 
 
 **\*Requires Raspbian Jessie LITE** you can find the lastest Jessie Lite Image [here](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2017-07-05/)\*
@@ -111,7 +107,14 @@ Device WiFi Password: Choose Password (Depending on Install)
 Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11) :  Sound Card Choice
 ```
 
-**_Looking for Devs to Help Support/Futher This Project_**
+### Volumio-Install
+
+```
+git clone https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install
+cd super-simple-raspberry-pi-audio-receiver-install
+git checkout volumio-fix
+sudo ./install.sh
+```
 
 ### Stretch-Install
 
@@ -126,3 +129,5 @@ sudo ./install.sh
 **Donation**
 ***Now graciously accepting donations. Donations are not required, but donations do help to keep this project alive and up to date***
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/pools/c/812h247JvP)
+
+**All Credits going to BaReinhard**
